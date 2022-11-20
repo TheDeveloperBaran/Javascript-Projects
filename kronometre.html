@@ -1,0 +1,29 @@
+<html>
+<head>
+
+
+
+
+</head>
+<body>
+<script type = "text/javascript">
+
+var	saniye = 3597;
+function	kronometre () {
+
+var	dakika = Math.floor(saniye / 60);
+var	saat = Math.floor(saniye / 3600);
+var	dak = dakika % 60;
+var	san = saniye % 60;
+
+document.write(saat + " sa: " +dak + " dk: "+ " "+ san + " " +" sec ");
+document.write("<br/>");
+saniye++;
+}
+setInterval("kronometre()", 1000);
+
+
+
+</script>
+</body>
+</html>
